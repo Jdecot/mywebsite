@@ -1,3 +1,8 @@
 .brand-height{
-    max-height: 20px;
+    max-height: 32px;
+    max-width: 216px;
+}
+
+.brand-wrap {
+    padding: 58px 14px;
 }
