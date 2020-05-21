@@ -8,7 +8,12 @@
 			<nav id="nav-menu-container">
 				<ul class="nav-menu">
 					<li class=""><a class="active" href="index.php">Home</a></li>
-					<li><a href="about.php">About</a></li>
+					<li class="menu-has-children"><a href="about.php">About</a>
+						<ul>
+							<li><a href="path.php">My path</a></li>
+							<li><a href="job-history.php">Job history</a></li>
+						</ul>
+					</li>
 					<li><a href="portfolio.php">Portfolio</a></li>
 					<li class="menu-has-children"><a href="#">Pages</a>
 						<ul>
@@ -16,12 +21,6 @@
 							<li><a href="contact.php">Contact</a></li>
 							<li><a href="services.php">Service</a></li>
 							<li><a href="portfolio-details.php">Portfolio Details</a></li>
-						</ul>
-					</li>
-					<li class="menu-has-children"><a href="">Blog</a>
-						<ul>
-							<li><a href="blog-home.php">Blog Home</a></li>
-							<li><a href="blog-single.php">Blog Single</a></li>
 						</ul>
 					</li>
 				</ul>
