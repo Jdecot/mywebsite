@@ -1,0 +1,1 @@
+<a href="https://www.linkedin.com/in/julien-decot-551802132/"  target="_blank" title="LinkedIn" class="btn btn-linkedin btn-lg"><i class="fa fa-linkedin fa-fw"></i> LinkedIn</a>
