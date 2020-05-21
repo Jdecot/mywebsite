@@ -8,7 +8,12 @@
 			<nav id="nav-menu-container">
 				<ul class="nav-menu">
 					<li class=""><a class="active" href="index.php">Home</a></li>
-					<li><a href="about.php">About</a></li>
+					<li class="menu-has-children"><a href="about.php">About</a>
+						<ul>
+							<li><a href="path.php">My path</a></li>
+							<li><a href="job-history.php">Job history</a></li>
+						</ul>
+					</li>
 					<li><a href="portfolio.php">Portfolio</a></li>
 					<li class="menu-has-children"><a href="#">Pages</a>
 						<ul>

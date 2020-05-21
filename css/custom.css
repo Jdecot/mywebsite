@@ -3,6 +3,176 @@
     max-width: 216px;
 }
 
-.brand-wrap {
+.brand-wrap{
     padding: 58px 14px;
+}
+
+.small-gap{
+	height: 100px;
+    display: block;
+    width: 100%;
+}
+
+.horizontal-center{
+	text-align: center;
+}
+
+.max-width-100{
+	max-width: 100%;
+}
+
+/*--------------- Job history ---------------*/
+.job-history-year{
+	font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 70px;
+    text-transform: capitalize;
+    position: relative;
+    line-height: 44px;
+    text-align: center;
+}
+
+
+.job-history-year:before {
+    content: "";
+    border: 1px solid #e45447;
+    position: absolute;
+    width: 35%;
+    top: 22px;
+    left: 0;
+}
+
+.job-history-year:after {
+    content: "";
+    border: 1px solid #e45447;
+    width: 35%;
+    position: absolute;
+    top: 22px;
+    right: 0;
+}
+
+@media screen and (max-width: 992px) {
+	.job-history-year{
+		font-size: 36px;
+		font-weight: 700;
+		margin-bottom: 70px;
+		text-transform: capitalize;
+		position: relative;
+		line-height: 44px;
+		text-align: center;
+	}
+
+
+	.job-history-year:before {
+		content: "";
+		border: 1px solid #e45447;
+		position: absolute;
+		width: 25%;
+		top: 22px;
+		left: 0;
+	}
+
+	.job-history-year:after {
+		content: "";
+		border: 1px solid #e45447;
+		width: 25%;
+		position: absolute;
+		top: 22px;
+		right: 0;
+	}
+}
+
+
+/*--------------- PDN ---------------*/
+
+.portfolio-title{
+	font-size: 24px;
+    margin: 0;
+    font-weight: bold;
+    padding-bottom: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-style: normal;
+    color: #00939f;
+}
+
+.centered-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.page-title-subtitle {
+    border-top: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.wpb_text_column{
+	max-width: 63%;
+    display: inline-block;
+    padding-left: 2%;
+    vertical-align: bottom;
+}
+
+.wpb_single_image.vc_align_center {
+    text-align: center;
+    max-width: 35%;
+    display: inline-block;
+    vertical-align: top;
+
+}
+
+.wpb_single_image .vc_figure {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    max-width: 100%;
+}
+
+
+.wpb_single_image .vc_single_image-wrapper.vc_box_circle{
+    border-radius: 50%;
+    box-shadow: none;
+    overflow: hidden;
+}
+
+.wpb_single_image img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: top;
+}
+
+.wpb_single_image .vc_single_image-wrapper {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 100%;
+}
+
+.read-full{
+	text-align: center;
+    border-bottom: 1px solid #efefef;
+    padding: 10px 0;
+    overflow: hidden;
+}
+
+.read-full .btn{
+	background: #00939f;
+    border: 1px solid #00939f;
+}
+
+.read-full .btn:hover{
+	background: #fff;
+}
+
+.read-full .btn:hover span {
+    opacity: 1;
+    color: #00939f;
 }
