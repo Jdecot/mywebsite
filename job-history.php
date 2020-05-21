@@ -126,12 +126,12 @@
 								<p>TotalWarTV.com, Lille</p>
 							</div>
 							<div class="top-right">
-								<a href="#" class="primary-btn" data-text="Sept 2018 to Jun 2019">
-									<span>S</span><span>e</span><span>p</span><span>t</span>
-									<span>2</span><span>0</span><span>1</span><span>8</span>
+								<a href="#" class="primary-btn" data-text="Feb 2015 to May 2016">
+									<span>F</span><span>e</span><span>b</span>
+									<span>2</span><span>0</span><span>1</span><span>5</span>
 									<span>t</span><span>o</span>
-									<span>J</span><span>u</span><span>n</span>
-									<span>2</span><span>0</span><span>1</span><span>8</span>
+									<span>M</span><span>a</span><span>y</span>
+									<span>2</span><span>0</span><span>1</span><span>6</span>
 								</a>
 							</div>
 						</div>
@@ -317,53 +317,7 @@
 		</div>
 	</section>
 	<!-- End Job Historyt Area Area -->
-	<!-- Start Contact Area -->
-	<section class="contact-area section-gap">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="contact-title">
-						<h2>Contact Me</h2>
-						<p>If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may see
-						some for as low as $.17 each.</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="row mt-80">
-				<div class="col-lg-4 col-md-4">
-					<div class="contact-box">
-						<h4>+44 2365 654 8962</h4>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-4">
-					<div class="contact-box">
-						<h4>information@colorlib.com</h4>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-4">
-					<div class="contact-box">
-						<h4>kenedyjackson.me</h4>
-					</div>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-lg-12 text-center">
-					<a href="#" class="primary-btn mt-50" data-text="Hire Me">
-						<span>H</span>
-						<span>i</span>
-						<span>r</span>
-						<span>e</span>
-						<span> </span>
-						<span>M</span>
-						<span>e</span>
-					</a>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- End Contact Area -->
+	<?php include('components/contact-section.php'); ?>
 
 	<!-- start footer Area -->
 	<footer class="footer-area">

@@ -133,7 +133,7 @@
 													<p><em>« Dans la métropole lilloise, on sait que ça carbure au numérique. Le fait d’attirer les gens par le Printemps du Numérique crée un effet boule de neige : plus on attire de monde... »</em></p>
 												</div>
 												<div class="centered-wrapper read-full">
-													<a href="http://www.tonjobnumerique.fr/index.php/portfolio/julien-web-developpeur/" class="primary-btn btn" data-text="Full interview">
+													<a href="http://www.tonjobnumerique.fr/index.php/portfolio/julien-web-developpeur/" target="_blank" class="primary-btn btn" data-text="Full interview">
 														<span>F</span>
 														<span>u</span>
 														<span>l</span>
@@ -234,53 +234,7 @@
 				</section>
 				<!-- End About Area -->
 
-				<!-- Start Contact Area -->
-				<section class="contact-area section-gap">
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-12">
-								<div class="contact-title">
-									<h2>Contact Me</h2>
-									<p>If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may see
-									some for as low as $.17 each.</p>
-								</div>
-							</div>
-						</div>
-
-						<div class="row mt-80">
-							<div class="col-lg-4 col-md-4">
-								<div class="contact-box">
-									<h4>+44 2365 654 8962</h4>
-								</div>
-							</div>
-							<div class="col-lg-4 col-md-4">
-								<div class="contact-box">
-									<h4>information@colorlib.com</h4>
-								</div>
-							</div>
-							<div class="col-lg-4 col-md-4">
-								<div class="contact-box">
-									<h4>kenedyjackson.me</h4>
-								</div>
-							</div>
-						</div>
-
-						<div class="row">
-							<div class="col-lg-12 text-center">
-								<a href="#" class="primary-btn mt-50" data-text="Hire Me">
-									<span>H</span>
-									<span>i</span>
-									<span>r</span>
-									<span>e</span>
-									<span> </span>
-									<span>M</span>
-									<span>e</span>
-								</a>
-							</div>
-						</div>
-					</div>
-				</section>
-				<!-- End Contact Area -->
+				<?php include('components/contact-section.php'); ?>
 
 				<!-- start footer Area -->
 				<footer class="footer-area">
