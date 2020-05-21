@@ -301,21 +301,21 @@
 					<div class="single-job">
 						<div class="top-sec d-flex justify-content-between">
 							<div class="top-left">
-								<h4>Senior Creative Design</h4>
-								<p>Old Bird IT, New Yorkt</p>
+								<h4>SoftWare Engineer</h4>
+								<p>Easyence, La Madeleine</p>
 							</div>
 							<div class="top-right">
-								<a href="#" class="primary-btn" data-text="Jul '15 to Present">
-									<span>J</span><span>u</span><span>l</span>
-									<span>'</span><span>1</span><span>5</span>
+								<a href="#" class="primary-btn" data-text="Sept 2019 to Sept 2020">
+									<span>S</span><span>e</span><span>p</span><span>t</span>
+									<span>2</span><span>0</span><span>1</span><span>9</span>
 									<span>t</span><span>o</span>
-									<span>P</span><span>r</span><span>e</span><span>s</span><span>e</span><span>n</span><span>t</span>
+									<span>S</span><span>e</span><span>p</span><span>t</span>
+									<span>2</span><span>0</span><span>2</span><span>0</span>
 								</a>
 							</div>
 						</div>
 						<div class="bottom-sec wow fadeIn" data-wow-duration="2s">
-							All users on MySpace will know that there are millions of people out there. Every day besides. All users on My will know
-							that there are millions of people out of the field there.
+							Web developpement with VueJS
 						</div>
 					</div>
 				</div>
@@ -324,21 +324,21 @@
 					<div class="single-job">
 						<div class="top-sec d-flex justify-content-between">
 							<div class="top-left">
-								<h4>Senior Visualiser</h4>
-								<p>Old Bird IT, New Yorkt</p>
+								<h4>Web Analyst</h4>
+								<p>Cofidis, Villeneuve d'Ascq</p>
 							</div>
 							<div class="top-right">
-								<a href="#" class="primary-btn" data-text="Jul '15 to Present">
-									<span>J</span><span>u</span><span>l</span>
-									<span>'</span><span>1</span><span>5</span>
+								<a href="#" class="primary-btn" data-text="Sept 2018 to Jun 2019">
+									<span>S</span><span>e</span><span>p</span><span>t</span>
+									<span>2</span><span>0</span><span>1</span><span>8</span>
 									<span>t</span><span>o</span>
-									<span>P</span><span>r</span><span>e</span><span>s</span><span>e</span><span>n</span><span>t</span>
+									<span>J</span><span>u</span><span>n</span>
+									<span>2</span><span>0</span><span>1</span><span>8</span>
 								</a>
 							</div>
 						</div>
-						<div class="bottom-sec wow fadeIn" data-wow-duration="2s" data-wow-delay="0.2s">
-							All users on MySpace will know that there are millions of people out there. Every day besides. All users on My will know
-							that there are millions of people out of the field there.
+						<div class="bottom-sec wow fadeIn" data-wow-duration="2s">
+							Reporting of user traffic and sells
 						</div>
 					</div>
 				</div>
@@ -347,44 +347,47 @@
 					<div class="single-job">
 						<div class="top-sec d-flex justify-content-between">
 							<div class="top-left">
-								<h4>Junior Visualiser</h4>
-								<p>Old Bird IT, New Yorkt</p>
+								<h4>Web developper</h4>
+								<p>Altran, Wasquehal</p>
 							</div>
 							<div class="top-right">
-								<a href="#" class="primary-btn" data-text="Jul '15 to Present">
-									<span>J</span><span>u</span><span>l</span>
-									<span>'</span><span>1</span><span>5</span>
+								<a href="#" class="primary-btn" data-text="Sept 2017 to Jun 2018">
+									<span>S</span><span>e</span><span>p</span><span>t</span>
+									<span>2</span><span>0</span><span>1</span><span>7</span>
 									<span>t</span><span>o</span>
-									<span>P</span><span>r</span><span>e</span><span>s</span><span>e</span><span>n</span><span>t</span>
+									<span>S</span><span>e</span><span>p</span><span>t</span>
+									<span>2</span><span>0</span><span>1</span><span>8</span>
 								</a>
 							</div>
 						</div>
-						<div class="bottom-sec wow fadeIn" data-wow-duration="2s" data-wow-delay="0.4s">
-							All users on MySpace will know that there are millions of people out there. Every day besides. All users on My will know
-							that there are millions of people out of the field there.
+						<div class="bottom-sec wow fadeIn" data-wow-duration="2s">
+							Web developpement with AngularJS</br>
+							Data Science operationnal research
 						</div>
 					</div>
 				</div>
-
 				<div class="col-lg-6">
 					<div class="single-job">
 						<div class="top-sec d-flex justify-content-between">
 							<div class="top-left">
-								<h4>Intern Designer</h4>
-								<p>Old Bird IT, New Yorkt</p>
+								<h4>Webmaster</h4>
+								<p>TotalWarTV.com, Lille</p>
 							</div>
 							<div class="top-right">
-								<a href="#" class="primary-btn" data-text="Jul '15 to Present">
-									<span>J</span><span>u</span><span>l</span>
-									<span>'</span><span>1</span><span>5</span>
+								<a href="#" class="primary-btn" data-text="Sept 2018 to Jun 2019">
+									<span>S</span><span>e</span><span>p</span><span>t</span>
+									<span>2</span><span>0</span><span>1</span><span>8</span>
 									<span>t</span><span>o</span>
-									<span>P</span><span>r</span><span>e</span><span>s</span><span>e</span><span>n</span><span>t</span>
+									<span>J</span><span>u</span><span>n</span>
+									<span>2</span><span>0</span><span>1</span><span>8</span>
 								</a>
 							</div>
 						</div>
-						<div class="bottom-sec wow fadeIn" data-wow-duration="2s" data-wow-delay="0.6s">
-							All users on MySpace will know that there are millions of people out there. Every day besides. All users on My will know
-							that there are millions of people out of the field there.
+						<div class="bottom-sec wow fadeIn" data-wow-duration="2s">
+							Creation of a website with Wordpress</br>
+							Web developpement with PHP, Javascript, HTML/CSS</br>
+							Articles writing</br>
+							Advertising management
 						</div>
 					</div>
 				</div>

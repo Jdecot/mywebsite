@@ -59,8 +59,7 @@
 							</div>
 						</div>
 						<div class="bottom-sec wow fadeIn" data-wow-duration="2s">
-							All users on MySpace will know that there are millions of people out there. Every day besides. All users on My will know
-							that there are millions of people out of the field there.
+							Web developpement with VueJS
 						</div>
 					</div>
 				</div>
@@ -86,8 +85,7 @@
 							</div>
 						</div>
 						<div class="bottom-sec wow fadeIn" data-wow-duration="2s">
-							All users on MySpace will know that there are millions of people out there. Every day besides. All users on My will know
-							that there are millions of people out of the field there.
+							Reporting of user traffic and sells
 						</div>
 					</div>
 				</div>
@@ -112,8 +110,8 @@
 							</div>
 						</div>
 						<div class="bottom-sec wow fadeIn" data-wow-duration="2s">
-							All users on MySpace will know that there are millions of people out there. Every day besides. All users on My will know
-							that there are millions of people out of the field there.
+							Web developpement with AngularJS</br>
+							Data Science operationnal research
 						</div>
 					</div>
 				</div>
@@ -138,7 +136,10 @@
 							</div>
 						</div>
 						<div class="bottom-sec wow fadeIn" data-wow-duration="2s">
-							Création et développement du site internet TotalWarTV.com, ayant eu pour trafic lors de son dernier mois d'activité 4.000 visiteurs pour 17.500 pages vues.
+							Creation of a website with Wordpress</br>
+							Web developpement with PHP, Javascript, HTML/CSS</br>
+							Articles writing</br>
+							Advertising management
 						</div>
 					</div>
 				</div>
@@ -164,7 +165,7 @@
 							</div>
 						</div>
 						<div class="bottom-sec wow fadeIn" data-wow-duration="2s">
-							Support à distance aux utilisateurs.
+							IT support to the employees by phone
 						</div>
 					</div>
 				</div>
@@ -187,7 +188,12 @@
 							</div>
 						</div>
 						<div class="bottom-sec wow fadeIn" data-wow-duration="2s">
-							Prise de commande / Gestion des litiges transporteur / Réclamation clients / Manquants colis / Remboursement / Suivi de facture
+							Orders taking</br>
+							Management of carrier disputes</br>
+							Customer complaint</br>
+							Missing packages</br>
+							Refund</br>
+							Invoice tracking
 						</div>
 					</div>
 				</div>
@@ -209,7 +215,7 @@
 							</div>
 						</div>
 						<div class="bottom-sec wow fadeIn" data-wow-duration="2s" data-wow-delay="0.2s">
-							Constitution de pistes d'audit relatives aux dossiers AQR / Développement d'applications informatiques (VBA)
+							Constitution of administrative files
 						</div>
 					</div>
 				</div>
@@ -231,7 +237,7 @@
 							</div>
 						</div>
 						<div class="bottom-sec wow fadeIn" data-wow-duration="2s" data-wow-delay="0.4s">
-							Détermination des prix de vente des produits de l'entreprise.
+							Determination of company's products sell price
 						</div>
 					</div>
 				</div>
@@ -253,7 +259,9 @@
 							</div>
 						</div>
 						<div class="bottom-sec wow fadeIn" data-wow-duration="2s" data-wow-delay="0.6s">
-							Supervision du réseau de l'entreprise / Support informatique aux utilisateurs / Gestion du parc informatique
+							Supervision of the company network</br>
+							IT support to the employees by phone and proximity</br>
+							Management of the material and computer park
 						</div>
 					</div>
 				</div>
@@ -275,7 +283,7 @@
 							</div>
 						</div>
 						<div class="bottom-sec wow fadeIn" data-wow-duration="2s" data-wow-delay="0.6s">
-							Production de statistique sur l'utilisation des transports en commun / Communication sur les changements de lignes de bus
+							Communication to the customer about transport lines modification
 						</div>
 					</div>
 				</div>
@@ -297,7 +305,8 @@
 							</div>
 						</div>
 						<div class="bottom-sec wow fadeIn" data-wow-duration="2s" data-wow-delay="0.6s">
-							Réclamation de créances impayées / Négociation d'accords de remboursement
+							Recovering of unpaid debt by phone call</br>
+							Negociation of refund agreement
 						</div>
 					</div>
 				</div>
