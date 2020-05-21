@@ -82,7 +82,7 @@
 		<div class="container">
 			<div class="row align-items-center justify-content-between">
 				<div class="col-lg-6 about-left">
-					<img class="img-fluid" src="img/about-img.jpg" alt="">
+					<img class="img-fluid" src="img/julien-d2-lr.png" alt="">
 				</div>
 				<div class="col-lg-5 col-md-12 about-right">
 					<div class="section-title">
@@ -90,12 +90,9 @@
 					</div>
 					<div class="mb-50 wow fadeIn" data-wow-duration=".8s">
 						<p>
-							inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the
-							workplace. That’s why it’s crucial that, as women, our behavior on the job is beyond reproach. inappropriate behavior
-							is often laughed. inappropriate behavior is often laughed off as “boys will be boys,” women face higher.
+							Hello ! My name is Julien, born in 1989 I'm now Data Scientist and Software Engineer. I did my study in the city of Lille, in the north of France. I started my career by doing web developpement before orienting my path to Statistics and Data Science. In that domain I love to treat data and develop models, my pleasure resisdes in the fact of seeing the accuracy indicators rising up due to my work.   
 						</p>
-						<p>That’s why it’s crucial that, as women, our behavior on the job is beyond reproach. inappropriate behavior is often
-							laughed.
+						<p>To do that, I use Machine Learning methods with Python. I created my own small library with functions found on the web or created myself. 
 						</p>
 					</div>
 					<a href="#" class="primary-btn white" data-text="More Info">
@@ -117,6 +114,61 @@
 						<span>m</span>
 						<span>e</span>
 					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End About Area -->
+
+	<!-- Start About Area -->
+	<section class="about-area section-gap">
+		<div class="container">
+			<div class="row align-items-center justify-content-between">
+				<div class="col-lg-6 about-left">
+					<div class="section-title">
+						<h2>My study</h2>
+					</div>
+					<div class="mb-50 wow fadeIn" data-wow-duration=".8s">
+						<p>
+							I got my Economic science bachelor in 2010 and I did the largest part of my study at the Lille University. I began by two years of mathematics and computer science. I was having no clue about my futur job and what I wanted to do in my life. So I started working for several companys with short and temporary contracts. As I was playing video games with a friend who was web designer, I decided to try to create my own website. With his advises I spent two years working on it. I managed to increase my trafic regularly and arrived to 25000 page views by month for around 4500 visitors. 
+						</p>
+						<p>
+							But I was a beginner and the website's pages were slow to load. I then decided to go back to school to learn web developpement. The CNAM training centre trusted in my project and gave me a place for a 4 month training. At the end of the courses I had to find an internship but the French employment agency Pôle Emploi called me to propose me another training in computer science. I accepted and started a new training of 3 months with Global Knowledge, a Microsoft partner, where I learned about C# programming. 
+						</p>
+						<p>
+							The training sponsorised by Pôle Emploi are called P.O.E., they are organised in partnership with IT companys. That kind of training is a great system for the student. Indeed, in theory, you have to be hired by a company before the training to be accepted. You can enter the training Without companys but the organisers of the training are almost obligated to find a job for you. To get a company and enter the company, Pôle Emploi organises for example job dating for the futur students and companys. I met Altran by participating to one of these job dating. Another organisation for job searcher, called the M.I.E was also present and helping to organise the event, they interviewed me and you can find the result here : 
+						</p>
+						<div class="PDN-container">
+							
+						</div>
+						<p>
+							The third year was oriented on web developpement, I followed the cursus in an alternating work/study mode. I was half of the time at the university learning computer science, and the second part of that time doing web developpement for the Altran company. Altran initiated me to Data Science and I wanted to pursue my study in that domain. I Did the two next years, still in an alternating mode, studying Statistics and Business Intelligence, first for the company Cofidis then Easyence for the last year.   
+						</p>
+						<p>To do that, I use Machine Learning methods with Python. I created my own small library with functions found on the web or created myself. 
+						</p>
+					</div>
+					<a href="#" class="primary-btn white" data-text="More Info">
+						<span>M</span>
+						<span>o</span>
+						<span>r</span>
+						<span>e</span>
+						<span> </span>
+						<span>I</span>
+						<span>n</span>
+						<span>f</span>
+						<span>o</span>
+					</a>
+					<a href="#" class="primary-btn" data-text="Resume">
+						<span>R</span>
+						<span>e</span>
+						<span>s</span>
+						<span>u</span>
+						<span>m</span>
+						<span>e</span>
+					</a>
+				</div>
+				<div class="col-lg-5 col-md-12 about-right">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29061.888232481695!2d3.096794960805926!3d50.610304436936296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x975b789ee1f01e43!2sUniversit%C3%A9%20de%20Lille%20Campus%20Cit%C3%A9%20Scientifique!5e0!3m2!1sfr!2sbe!4v1590003993156!5m2!1sfr!2sbe" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 				</div>
 			</div>
 		</div>
