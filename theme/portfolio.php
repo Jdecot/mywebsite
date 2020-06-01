@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zxx" class="no-js">
 
-<?php include('layouts/head.html'); ?>
+<?php include('layouts/head.php'); ?>
 
 <body>
 
@@ -13,13 +13,12 @@
 			<div class="row d-flex align-items-center justify-content-center">
 				<div class="about-content col-lg-12">
 					<h1 class="text-white">
-						Portfolio Details
+						Portfolio
 					</h1>
 					<p class="link-nav">
 						<span class="box">
 							<a href="index.html">Home </a>
-							<a href="portfolio.html">Portfolio</a>
-							<a href="portfolio-details.html">Portfolio Details</a></p>
+							<a href="portfolio.html">Portfolio</a></p>
 					</span>
 				</div>
 			</div>
@@ -27,52 +26,115 @@
 	</section>
 	<!-- End banner Area -->
 
-	<!-- Portfolio Details Area -->
-	<section class="portfolio_details_area section-gap">
+	<!-- Start Work Area Area -->
+	<section class="work-area section-gap-top section-gap-bottom-90" id="work">
 		<div class="container">
-			<div class="portfolio_details_inner">
-				<div class="row">
-					<div class="col-md-6">
-						<div class="left_img">
-							<img class="img-fluid" src="img/project-details-1.jpg" alt="">
+			<div class="row d-flex justify-content-between align-items-end mb-80">
+				<div class="col-lg-6">
+					<div class="section-title">
+						<h2>Latest Works</h2>
+						<p>If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may see
+							some for as low as $.17 each.</p>
+					</div>
+				</div>
+
+				<div class="col-lg-6">
+					<div class="filters">
+						<ul>
+							<li class="active" data-filter=".all">All Categories</li>
+							<li data-filter=".branding">Branding</li>
+							<li data-filter=".creative">Creative Work</li>
+							<li data-filter=".web-design">Web Design</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="filters-content">
+				<div class="row grid">
+					<div class="single-work col-lg-4 col-md-6 col-sm-12 all creative wow fadeInUp" data-wow-duration="2s">
+						<div class="relative">
+							<div class="thumb">
+								<div class="overlay overlay-bg"></div>
+								<img class="image img-fluid" src="img/work/w1.jpg" alt="">
+							</div>
+							<div class="middle">
+								<h4>2D Vinyl Design</h4>
+								<div class="cat">Client Project</div>
+							</div>
+							<a class="overlay" href="portfolio-details.html"></a>
 						</div>
 					</div>
-					<div class="offset-md-1 col-md-5">
-						<div class="portfolio_right_text mt-30">
-							<h4>Lavendar ambient colorlib</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-								magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-							<ul class="list">
-								<li><span>Rating</span>: <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
-									 class="fa fa-star"></i></li>
-								<li><span>Client</span>: colorlib</li>
-								<li><span>Website</span>: colorlib.com</li>
-								<li><span>Completed</span>: 17 Aug 2018</li>
-							</ul>
-							<ul class="list social_details">
-								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-								<li><a href="#"><i class="fa fa-behance"></i></a></li>
-								<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-								<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-							</ul>
+					<div class="single-work col-lg-4 col-md-6 col-sm-12 all web-design branding wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.2s">
+						<div class="relative">
+							<div class="thumb">
+								<div class="overlay overlay-bg"></div>
+								<img class="image img-fluid" src="img/work/w2.jpg" alt="">
+							</div>
+							<div class="middle">
+								<h4>2D Vinyl Design</h4>
+								<div class="cat">Client Project</div>
+							</div>
+							<a class="overlay" href="portfolio-details.html"></a>
+						</div>
+					</div>
+					<div class="single-work col-lg-4 col-md-6 col-sm-12 all branding web-design wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.4s">
+						<div class="relative">
+							<div class="thumb">
+								<div class="overlay overlay-bg"></div>
+								<img class="image img-fluid" src="img/work/w3.jpg" alt="">
+							</div>
+							<div class="middle">
+								<h4>2D Vinyl Design</h4>
+								<div class="cat">Client Project</div>
+							</div>
+							<a class="overlay" href="portfolio-details.html"></a>
+						</div>
+					</div>
+					<div class="single-work col-lg-4 col-md-6 col-sm-12 all web-design wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.6s">
+						<div class="relative">
+							<div class="thumb">
+								<div class="overlay overlay-bg"></div>
+								<img class="image img-fluid" src="img/work/w6.jpg" alt="">
+							</div>
+							<div class="middle">
+								<h4>2D Vinyl Design</h4>
+								<div class="cat">Client Project</div>
+							</div>
+							<a class="overlay" href="portfolio-details.html"></a>
+						</div>
+					</div>
+					<div class="single-work col-lg-4 col-md-6 col-sm-12 all creative wow fadeInUp" data-wow-duration="2s">
+						<div class="relative">
+							<div class="thumb">
+								<div class="overlay overlay-bg"></div>
+								<img class="image img-fluid" src="img/work/w4.jpg" alt="">
+							</div>
+							<div class="middle">
+								<h4>2D Vinyl Design</h4>
+								<div class="cat">Client Project</div>
+							</div>
+							<a class="overlay" href="portfolio-details.html"></a>
+						</div>
+					</div>
+					<div class="single-work col-lg-4 col-md-6 col-sm-12 all branding wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.2s">
+						<div class="relative">
+							<div class="thumb">
+								<div class="overlay overlay-bg"></div>
+								<img class="image img-fluid" src="img/work/w5.jpg" alt="">
+							</div>
+							<div class="middle">
+								<h4>2D Vinyl Design</h4>
+								<div class="cat">Client Project</div>
+							</div>
+							<a class="overlay" href="portfolio-details.html"></a>
 						</div>
 					</div>
 				</div>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-					aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-					Duis aute irure dolor in reprehenderit.</p>
-				<p>Voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-					in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-					accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
-					beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-					consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia
-					dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam
-					aliquam quaerat voluptatem.</p>
 			</div>
 		</div>
 	</section>
-	<!-- End Portfolio Details Area -->
+	<!-- End Work Area Area -->
 
 	<!-- Start Contact Area -->
 	<section class="contact-area section-gap">

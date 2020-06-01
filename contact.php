@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zxx" class="no-js">
 
-<?php include('layouts/head.html'); ?>
+<?php include('layouts/head.php'); ?>
 
 <body>
 

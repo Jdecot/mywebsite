@@ -16,6 +16,9 @@
 .horizontal-center{
 	text-align: center;
 }
+.vertical-align-middle{
+    vertical-align: middle;
+}
 
 .max-width-100{
 	max-width: 100%;
@@ -23,6 +26,23 @@
 .contact-h4{
     margin-bottom: 15px;
 }
+
+.img-helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.img-frame {
+    white-space: nowrap;
+    text-align: center; margin: 1em 0;
+    height:100%;
+}
+
+.img-inpost{
+    max-height: 20rem;
+}
+
 
 /*--------------- Job history ---------------*/
 .job-history-year{
@@ -86,7 +106,7 @@
 }
 
 
-/*--------------- PDN ---------------*/
+/*--------------- Printemps Du Numérique ---------------*/
 
 .portfolio-title{
 	font-size: 24px;
