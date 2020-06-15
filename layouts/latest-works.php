@@ -5,17 +5,15 @@
 				<div class="col-lg-6">
 					<div class="section-title">
 						<h2>Latest Works</h2>
-						<p>If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may see
-							some for as low as $.17 each.</p>
+						<p>You can find here my latest work about Data Science or Web Development.</p>
 					</div>
 				</div>
-
 				<div class="col-lg-6">
 					<div class="filters">
 						<ul>
 							<li class="active" data-filter=".all">All Categories</li>
 							<li data-filter=".data">Data science</li>
-							<li data-filter=".web">Web Developpement</li>
+							<li data-filter=".web">Web Development</li>
 						</ul>
 					</div>
 				</div>
@@ -23,7 +21,9 @@
 
 			<div class="filters-content">
 				<div class="row grid">
-					<div class="single-work col-lg-12 col-md-12 col-sm-12 all data wow fadeInUp" data-wow-duration="2s">
+					<a href="house-prices.php" >
+					<div class="single-work col-lg-12 col-md-12 col-sm-12 all data wow fadeInUp horizontal-center" data-wow-duration="2s">
+						<h2>Kaggle competition - House Prices</h2>
 						<div class="relative">
 							<div class="thumb">
 								<div class="overlay overlay-bg"></div>
@@ -36,6 +36,7 @@
 							<a class="overlay" href="house-prices.php"></a>
 						</div>
 					</div>
+					</a>
 				</div>
 			</div>
 		</div>

@@ -1,30 +1,63 @@
-.brand-height{
+.brand-height {
     max-height: 32px;
     max-width: 216px;
 }
 
-.brand-wrap{
+.brand-wrap {
     padding: 58px 14px;
 }
 
-.small-gap{
+.small-gap {
 	height: 100px;
     display: block;
     width: 100%;
 }
+.margin-top-20 {
+    margin-top: 20px;
+}
+.margin-bottom-0{
+    margin-bottom: 0 !important;
+}
 
-.horizontal-center{
+.horizontal-center {
 	text-align: center;
 }
-.vertical-align-middle{
+.vertical-align-middle {
     vertical-align: middle;
 }
 
-.max-width-100{
+.max-width-100 {
 	max-width: 100%;
 }
-.contact-h4{
-    margin-bottom: 15px;
+.max-width-40{
+    max-width: 40%;
+}
+.height-100{
+    height:100%;
+}
+
+@media (max-width: 991px){
+    .sd-margin-bottom-2 {
+        margin-bottom: 3rem;
+    }
+}
+
+@media (max-width: 991px){
+    .sd-img-max-width-60 {
+        max-width: 60%;
+    }
+}
+
+.margin-bottom-2 {
+    margin-bottom: 2rem;
+}
+.margin-bottom-row {
+    margin-bottom: 6rem;
+}
+@media (max-width: 991px){
+    .margin-bottom-row {
+        margin-bottom: 3rem;
+    }
 }
 
 .img-helper {
@@ -35,14 +68,43 @@
 
 .img-frame {
     white-space: nowrap;
-    text-align: center; margin: 1em 0;
+    text-align: center; 
     height:100%;
+    margin-bottom: 3rem;
 }
 
-.img-inpost{
+.img-inpost {
     max-height: 20rem;
 }
 
+.img-max-height-4 {
+    max-height: 4rem;
+}
+
+.list-margin-left {
+    margin-left: 2rem;
+}
+
+.unordered-list-inpost li:before {
+    width: 10px;
+    height: 10px;
+    top: 9px;
+}
+
+.testimonials-pictures{
+    border: 2px solid transparent;
+    border-radius: 49.9%;
+    max-height: 8rem;
+}
+
+#IUT-A-picture{
+    border: 2px solid transparent;
+    border-radius: 8%;
+}
+
+pre{
+    margin-bottom: 0 !important;
+}
 
 /*--------------- Job history ---------------*/
 .job-history-year{

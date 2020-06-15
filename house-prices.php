@@ -19,11 +19,11 @@
 			<div class="row d-flex align-items-center justify-content-center">
 				<div class="about-content col-lg-12">
 					<h1 class="text-white">
-						Portfolio Details
+						Kaggle - House Prices
 					</h1>
 					<p class="link-nav">
 						<span class="box">
-							<a href="index.html">Home </a>
+							<a href="index.php">Home </a>
 							<a href="portfolio.php">Portfolio</a>
 					</span>
 				</div>
@@ -45,24 +45,16 @@
 					</div>
 					<div class="offset-md-1 col-md-5">
 						<div class="portfolio_right_text mt-30">
-							<h4>House prices</h4>
+							<h4>House Prices</h4>
 							<blockquote class="generic-blockquote">
 								With 79 explanatory variables describing (almost) every aspect of residential homes in Ames, Iowa, this competition challenges you to predict the final price of each home.
 							</blockquote>
 							<ul class="list">
-								<li><span>Rating</span>: <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
-									 class="fa fa-star"></i></li>
-								<li><span>Client</span>: Kaggle.com</li>
 								<li><span>Website</span>: <a href="https://www.kaggle.com/c/house-prices-advanced-regression-techniques" target="_blank">Kaggle.com - House Prices</a></li>
-
-								<li><span>Completed</span>: 2020</li>
-							</ul>
-							<ul class="list social_details">
-								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-								<li><a href="#"><i class="fa fa-behance"></i></a></li>
-								<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-								<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><span>GitHub</span>: <a href="https://github.com/Jdecot/House-prices" target="_blank">GitHub repository</a></li>
+                                <li><span>Last update</span>: June 2020 </li>
+								<li><span>Rank</span>: 1741 / 5364 </li>
+                                <li><span>R²</span>: 91,5 %</li>
 							</ul>
 						</div>
 					</div>
@@ -98,7 +90,7 @@
 						                }
 
 						                if (openLevel > level) {
-						                    toc += (new Array(openLevel - level + 1)).join("<ol class=\"ordered-list\">");
+						                    toc += (new Array(openLevel - level + 1)).join("<ol class=\"list-margin-left\">");
 						                } else if (openLevel < level) {
 						                    toc += (new Array(level - openLevel + 1)).join("</ol>");
 						                }
@@ -129,26 +121,37 @@
 			    </div>
 			    <hr/>
 				<div id="contents">
+					<div class="section-top-border">
+						<h1>Introduction</h1>
+						<p>The study realised and presented here brings a possible solution to a Data Science competition organised by the website Kaggle.com. The competition, called House Prices, aims to estimate the sale prices of houses located in Ames, a town located in the state of Iowa in the U.S.A. The accuracy of the predictions permitted to obtain a rank in the competition.</p>
+
+						<p>To achieve the study, Kaggle.com provides a dataset containing characteristics about the houses sold in the town. The dataset is split in two group of 1,460 houses. The difference between these two groups is that the first group includes the prices of the houses studied while the second is dedicated to test a potential modeling and doesn't include prices. Based on this dataset, this study will start by presenting a solution to prepare the data. The data are then used to elaborate a modeling of the unknown prices before being submitted to Kaggle.com to obtain a score.</p>  
+
+						<p>The full study was divided in several notebooks. One performs the first processing of the data, such as replacing missing values or creating new features based on the existing ones. This processing is supported by a second notebook which performs an exploratory data analysis to identify for example, the outliers. After the first processing, the data are then analysed again with the help of a third notebook. The goal of this third notebook consists in finding the best transformation for the data. Indeed, different methods, such as scaling, polynomial transformation or discretization, are combined and tested. A fourth notebook then uses the data to perform the modeling with different models and compares their results to pick the best one. All these notebooks use a library that I built myself by picking functions found on the web or that have been hand-written.</p>
+					</div>
 					<h1>Data preparation</h1>
 					<div class="section-top-border">
 						<h2>Import libraries and datasets</h2>
-						<p>Firstly, the datasets offered by Kaggle.com are imported as some usefull librarys for this first notebook :</p>
+						<p>Firstly, the datasets offered by Kaggle.com are imported as some useful libraries for this first notebook :</p>
 						<pre>
 							<code>
 	import pandas as pd
 	from sklearn.model_selection import train_test_split
-	import LibrairiePerso_v4_4 as ownLibrart
+	import LibrairiePerso_v4_4 as ownLibrary
 	import seaborn as sns 
 	import numpy as np
 	import copy
 
-	dataset = pd.read_csv("C:/Users/Julie/Documents/Big_Data/train_from_Kaggle.csv", sep=",")
-	submission = pd.read_csv("C:/Users/Julie/Documents/Big_Data/test_from_Kaggle.csv", sep=",")
+	path ='C:/path-to-the-notebooks/'
+
+	dataset = pd.read_csv(path + "train.csv", sep=",")
+	submission = pd.read_csv(path + "test.csv", sep=",")
 							</code>
 						</pre>
 					</div>
-					<h2>Split train/test</h2>
 					<div class="section-top-border">
+						<h2>Split train/test</h2>
+						<p>The train dataset provided by Kaggle.com is then divided between a train and a test.</p>
 						<pre>
 							<code>
 	exp = list(dataset.columns.values)
@@ -162,10 +165,10 @@
 		                    </code>
 		                </pre>
 	                </div>
-	                <h2>Replacement of missings data</h2>
 	                <div class="section-top-border">
-						<p>The features missings data can be real missings data or have a real signification like &quot;no basement bathroom&quot;. When the data are really missing they are replaced by the mode. In the other case they are replaced by 0 for continuous features or &quot;eNa&quot; for categorical features.</br>
-						A hand writted function allows to replace missing values of a feature, by the mode of the train set, for a particular house group from the same neighborhood.</p>
+	                	<h2>Replacement of missing data</h2>
+						<p>The features' missing data can be real missing data or have a real meaning like &quot;no basement bathroom&quot;. When the data are really missing they are replaced by the mode. In the other case they are replaced by 0 for continuous features or &quot;eNa&quot; for categorical features.</br>
+						A hand-written function allows the replacing of missing values of a feature, by the mode of the train set, for a particular house group from the same neighborhood.</p>
 						<h3>Replacement for continuous features where values are missing</h3>
 						<pre>
 							<code>
@@ -201,8 +204,24 @@
 						</pre>
 					</div>
 					<div class="section-top-border">
+						<h2>Features creations</h2>
+						<p>Some features are created based on the solution provided by <a href="https://www.kaggle.com/mgmarques/houses-prices-complete-solution">https://www.kaggle.com/mgmarques/houses-prices-complete-solution</a>. Another group of features will be created after the states are regrouped.</p>
+						<pre>
+							<code>
+	for df in [X_train, X_test, submission]:
+	    df.loc[:, 'YrBltAndRemod']=df['YearBuilt']+df['YearRemodAdd']
+	    df.loc[:, 'TotalSF']=df['TotalBsmtSF'] + df['1stFlrSF'] + df['2ndFlrSF']
+
+	    ...
+
+	    df.loc[:, 'haspool'] = df['PoolArea'].apply(lambda x: 1 if x > 0 else 0)
+	    df.loc[:, 'has2ndfloor'] = df['2ndFlrSF'].apply(lambda x: 1 if x > 0 else 0)
+							</code>
+						</pre>
+					</div>
+					<div class="section-top-border">
 						<h2>Features deletion</h2>
-						<p>Some features appear to be unusuable, they are deleted. I will understand later that it was a mistake and that they could be used differently than directly, for example by being combined with other features.</p>
+						<p>Some feature appear to be unusuable mostly because of too many missing values. They are therefor deleted. Before their deletion, some of them are combined with others to create new features.</p>
 						<h3>Examples of features deletion</h3>
 						<pre>
 							<code>
@@ -215,21 +234,28 @@
 						</pre>
 					</div>
 					<div class="section-top-border">
-						<h2>Outliers detection and correction</h2>
-						<p>To detect outliers, boxplot have been used. The outliers have then been corrected by capping the values of continuous data. here is the example for the TotalBsmtSF feature.</p>
-						<pre>
-							<code>
-	plt.figure(figsize=(16,8))
-	sns.boxplot(x=var,data=train_complet)
-	plt.show()
-	boxplot_stats(train_complet[var])
-							</code>
-						</pre>
-						<div class="img-frame">
-							<img class="image img-fluid img-inpost" src="img/house-prices/TotalBsmtSF-outliers.png" alt="">
-						</div>
-						
-						<p>The function gives us informations about the features's outliers.</p>
+                        <h2>Outlier detection and correction</h2>
+                        <div class="row align-items-center justify-content-between margin-bottom-0">
+                            <div class="col-lg-6 about-left">
+                                
+                                <p>To detect outliers, boxplot is used. The outliers are then corrected by capping the values of continuous data. Here is the example for the TotalBsmtSF feature.</p>
+                                <pre>
+                                    <code>
+    plt.figure(figsize=(16,8))
+    sns.boxplot(x=var,data=train_complet)
+    plt.show()
+    boxplot_stats(train_complet[var])
+                                    </code>
+                                </pre>
+                            </div>
+                            <div class="col-lg-5 col-md-12 about-right">
+                                <div class="img-frame">
+                                    <img class="image img-fluid img-inpost" src="img/house-prices/TotalBsmtSF-outliers.PNG" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+						<p>The boxplot chart gives us information about each feature's outliers.</p>
 						<pre>
 							<code>
 	[{'cihi': 1018.5865615891045,
@@ -248,25 +274,25 @@
 	'whislo': 105}]
 							</code>
 						</pre>
-						<p>These informations are used to cap the feature's values</p>
+						<p>This information is used to cap the features' values</p>
 						<pre>
 							<code>
 	train_complet['TotalBsmtSF'] = train_complet['TotalBsmtSF'].clip(105,2077)
 							</code>
 						</pre>
-						<p>After having been capped, the feature observes a rise of his correlation with the target feature. Indeed, for a simple linear regression, the R² passes from 37,5% to 42%.</p>
+						<p>After having been capped, most of the features observe a rise in their correlation with the target feature. Indeed, for example, for the TotalBsmtSF feature, with a simple linear regression the R² score increases from 37,5% to 42%.</p>
 						<div class="row mb-0">
 							<div class="col-lg-6 col-md-6 col-sm-12 img-frame">
-								<img class="image img-fluid" src="img/house-prices/TotalBsmtSF-rsquared-before.png" alt="">
+								<img class="image img-fluid" src="img/house-prices/TotalBsmtSF-rsquared-before.PNG" alt="">
 							</div>
 							<div class="col-lg-6 col-md-6 col-sm-12 img-frame">
-								<img class="image img-fluid" src="img/house-prices/TotalBsmtSF-rsquared-after.png" alt="">
+								<img class="image img-fluid" src="img/house-prices/TotalBsmtSF-rsquared-after.PNG" alt="">
 							</div>
 						</div>
 					</div>
 					<div class="section-top-border">
-						<h2>Target feature isn&#39;t correctly distributed</h2>
-						<p>The target feature &quot;SalePrice&quot; has to be correctly distributed, the np.log1p() function offers the best correction. But it's the np.log() function that has been used to achieve that correction as it was easyest to reverse the prediction later. We can see here the effects of the np.log1p() function on the SalePrice feature distribution, before and after the transformation :</p>
+						<h2>Correction of target feature's distribution</h2>
+						<p>The target feature &quot;SalePrice&quot; has to be correctly distributed, the np.log1p() function offers the best correction. We can see here the effects of the np.log1p() function on the SalePrice feature distribution, before and after the transformation :</p>
 						<pre>
 							<code>
 	train["SalePrice"] = np.log1p(train["SalePrice"])
@@ -283,7 +309,7 @@
 					</div>
 					<div class="section-top-border">
 						<h2>Scale Features</h2>
-						<p>The continuous features can then be scaled. The methods used will be presented further.</p>
+						<p>The continuous features can then be scaled. The methods used will be presented later.</p>
 						<pre>
 							<code>
 	quantitative = ['LotFrontage','LotArea','YearBuilt','YearRemodAdd','MasVnrArea','BsmtFinSF1','BsmtFinSF2','BsmtUnfSF','TotalBsmtSF','1stFlrSF','2ndFlrSF','GrLivArea','GarageYrBlt','GarageArea','WoodDeckSF','OpenPorchSF','EnclosedPorch','ScreenPorch', 'GarageArea', 'GrLivArea', '1stFlrSF', 'TotalBsmtSF']
@@ -294,8 +320,8 @@
 
 					</div>
 					<div class="section-top-border">
-						<h2>Export of the modified dataset for following notebooks</h2>
-						<p>The modified dataset are exported to csv. The following notebooks will now work on it without having to prepare again the data to this waypoint.</p>
+						<h2>Export of the modified datasets for following notebooks</h2>
+						<p>The modified datasets are exported to csv. The following notebooks will now work on it without having to prepare again the data up to this waypoint.</p>
 						<pre>
 							<code>
 	X_train['SalePrice'] = y_train
@@ -310,9 +336,9 @@
 					</div>
 					<div class="section-top-border">
 						<h1>Best data transformation finder</h1>
-						<p>A hand writted function allows to test differents combination of Scaling features method and features transformation methods</p>
-						<p>Here we find the differents <b>scaling methods</b> that can be applied to the early prepared dataset :
-							<ul class="unordered-list">
+						<p>A hand-written function allows the testing of different combinations of feature transformation methods.</br>
+						Here we find the different <b>scaling methods</b> that can be applied to the dataset prepared earlier :
+							<ul class="unordered-list list-margin-left">
 							    <li>No scaling</li>
 							    <li>New value = (value - feature&#39;s min value) / (feature&#39;s max value - feature&#39;s min value)</li>
 							    <li>New value = value / feature&#39;s max value</li>
@@ -320,24 +346,29 @@
 							    <li>New value = preprocessing.StandardScaler() function</li>
 							</ul>
 						</p>
-						<p>The differents results can then have their correlation with the target feature tested. A data frame give us the differents scores and allows to chose the best method for each feature.</br>
-						Another hand writted function allows to compare differents features transformations :
-						<ul class="unordered-list">
-						    <li>No modification of the feature</li>
-						    <li>A data tree regressor finds bins wich are the most correlated to the target feature</li>
-						    <li>Polynomial transformations of differents orders</li>
-						</ul>
+						<p>
+						Another hand-written function allows the testing of different feature transformation methods :
+							<ul class="unordered-list list-margin-left">
+							    <li>No modification of the feature</li>
+							    <li>A data tree regressor finds bins which are the most correlated to the target feature</li>
+							    <li>Polynomial transformations of different orders</li>
+							</ul>
 						</p>
-						<h2>Methods comparison data frame</h2>
-						<p>The two previously described functions product a data frame containing the differents R&sup2; scores. The following data frames are a shortened version of the complete one with less features and less scale methods concerned. </br>
-						The LotArea feature is an insterresting one, the "natural" correlation (if no transformation at all) with the target feature SalePrice presents a R² of 8.54%. The data tree regressor manages to create bins that have a correlation of 20.20% wich is a great improvement. The polynomial regression also improve the R² but not as much as the data tree regressor method.</br>
-						The second table indicates that these results can be improved again by scaled the feature before the transformations. 
+						<p>The different results can then have their correlation with the target feature tested. A data frame give us the different scores and allows to chose the best method for each feature.</br>
+
 						</p>
-						<span><b>Differents transformation with not scaled data</b></span>
+					</div>
+					<div class="section-top-border">
+						<h2>Data frame comparison methods</h2>
+						<p>The two previously described functions produce a data frame containing the different R&sup2; scores. The following data frames are a shortened version of the complete one with fewer features and fewer scale methods concerned. </br>
+						The LotArea feature is an interesting one. The "natural" correlation (if no transformation at all) with the target feature SalePrice presents a R² of 8.54%. The data tree regressor manages to create bins that have a correlation of 20.20% which is a great improvement. The polynomial regression also improves the R² but not as much as the data tree regressor method.</br>
+						The second table indicates that these results can be improved again by scaling the feature before the transformations. The best results in the competition were obtained without feature scaling but with a large recourse to binning and polynomial regression. 
+						</p>
+						<span><b>Different transformations with non-scaled data</b></span>
 						<div class="progress-table-wrap mb-30">
 							<div class="progress-table">
 							    <div class="table-head">
-							      <div class="serial">Not Scaled</div>
+							      <div class="serial">Non-Scaled</div>
 							      <div class="serial">R²</div>
 							      <div class="serial">DTR R²</div>
 							      <div class="serial">PR2 R²</div>
@@ -366,7 +397,7 @@
 							    </div>
 							</div>
 						</div>
-						<span><b>Differents transformation with scaled data</b></span>
+						<span><b>Different transformations with scaled data</b></span>
 						<div class="progress-table-wrap">
 							<div class="progress-table">
 							    <div class="table-head">
@@ -402,7 +433,7 @@
 					</div>
 					<div class="section-top-border">
 						<h2> Data tree regressor bins</h2>
-						<p>A parameter of the data tree regressor bins identifier function allows to print the bins as a python object. This object will furtherly be used to replace the values of the differents concerned features with another hand writted function.</p>
+						<p>A parameter of the data tree regressor bins identifier function allow the printing of the bins as a python object. This object will later be used to replace the values of the different concerned features with another hand-written function.</p>
 						<pre>
 							<code>
 	'LotFrontage': {
@@ -422,14 +453,14 @@
 
 					</div>
 					<div class="section-top-border">
-					<h2>Categorical features regrouping method</h2>
-						<p>The method used to regroup categorical feature is based on a boxplot study. The boxplot are showing the correlation with the target feature for each states of a particular categorical feature. The similar state of this feature are then regrouped together.</br>
-						Here is an example with the BsmtCond feature. On the following picture, the correlation between each state of the feature and the target feature is represented with a boxplot. The blue boxplot and the brown wont be regrouped, they aren't similar with any of the other boxplot. The three last states (eNa for no basement, Fa and Po) have more similar boxplot so they will be regrouped together.
+					<h2>Categorical features regroupment method</h2>
+						<p>The method used to regroup categorical feature is based on a boxplot study. The boxplot show the correlation with the target feature for each state of a particular categorical feature. The similar states of this feature are then regrouped together.</br>
+						Here is an example with the BsmtCond feature. On the following picture, the correlation between each state of the feature and the target feature is represented with a boxplot. The blue boxplot and the brown won't be regrouped, because they aren't similar to any of the other boxplot. The last three states (eNa for no basement, Fa and Po) have more similar boxplots, so they will be regrouped together.
 						</p>
 						<div class="img-frame">
 							<img class="image img-fluid img-inpost" src="img/house-prices/BsmtCond-regroup.PNG" alt="">
 						</div>
-						<p>At the end of the study for each feature, another object python gives the list of furtherly regrouped states.</p>
+						<p>At the end of the study for each feature, another object python gives the list of states that will be regrouped later.</p>
 						<pre>
 							<code>
     'BsmtQual': {
@@ -446,12 +477,12 @@
 						</pre>
 					</div>
 					<div class="section-top-border">
-						<h1>Place to the action</h1>
-						<p>Now that features have been studyed and transformations chosen the action can start.</p>
+						<h1>Modeling</h1>
+						<p>Now that features have been analyzed and transformation methods chosen, the modeling part can start.</p>
 					</div>
 					<div class="section-top-border">
 						<h2>Transformation based on the previous study</h2>
-						<p>If the data preparation notebook hasn&#39;t do it, the continuous features are firstly scaled according to the method previously identified. Differents list of features are set for the rest of the process. Here, some continuous features are placed in lists for features wich will be scaled (scaleMethod1 and 3) while some won't be scaled (scaleMethod0). We retrieve also the features which need a binning with the data tree regressor and those which need a polynomial transformation of order 2 or 3. The "ignore" list will be use by the dichotomization function.</p>
+						<p>If the data preparation notebook hasn&#39;t done it, the continuous features are firstly scaled according to the method previously identified. Different lists of features are set for the rest of the process. Here, some continuous features are placed in lists for features which will be scaled (scaleMethod1 and 3) while some won't be scaled (scaleMethod0). We also retrieve the features which need a binning with the data tree regressor and those which need a polynomial transformation of order 2 or 3. The "ignore" list will be used by the dichotomization function.</p>
 						<span><b>Define the list of features for each transformation type</b></span>
 						<pre>
 							<code>
@@ -468,19 +499,48 @@
 	ignore = var_base + var_base_pr2 + var_base_pr3 + var_lr
 							</code>
 						</pre>
+						<span><b>The scaling function allows us to choose the method that will be used</b></span>
+						<pre>
+							<code>
+	def scale_features(dataset, features, scaleMethod) :
+	    from sklearn import preprocessing
+	    if (features == [] or features == ''):
+	        features = dataset.columns
+	    df = copy.deepcopy(dataset)
+	    
+	    if(scaleMethod == 0):
+	        return df
+	    
+	    if(scaleMethod == 1):
+	        for var in df[features] :
+	                df[var] = (df[var]-df[var].min()) / (df[var].max()-df[var].min())
+	    
+	    if(scaleMethod == 2):
+	        for var in df[features] :
+	                df[var]=df[var]/df[var].max()
+	                
+	    if(scaleMethod == 3):
+	        for var in df[features] :                
+	                df[var] = (df[var]-df[var].mean()) / df[var].std()
+	                
+	    if(scaleMethod == 4):
+	        df = preprocessing.StandardScaler().fit(df[features]).transform(df[features])
+	        df = pd.DataFrame(data=df[0:,0:],    
+	                      index=dataset.index,    
+	                      columns=dataset[features].columns)
+	    
+	    return df
+							</code>
+						</pre>
 						<span><b>Performs the scale tranformation</b></span>
 						<pre>
 							<code>
 	X_train = ownLibrary.scale_features(X_train, scaleMethod1, 1)
 	X_test = ownLibrary.scale_features(X_test, scaleMethod1, 1)
 	submission = ownLibrary.scale_features(submission, scaleMethod1, 1)
-
-	X_train = ownLibrary.scale_features(X_train, scaleMethod3, 3)
-	X_test = ownLibrary.scale_features(X_test, scaleMethod3, 3)
-	submission = ownLibrary.scale_features(submission, scaleMethod3, 3)
 							</code>
 						</pre>
-						<p>The states of categorical features are regrouped and the continuous features concerned are binned according to the data tree regressor bins. The regroupments are performed by a hand writted function. The function loop over a dataset's features, if a feature is in one of the python object that define the regroupment, so the regroupment is done.</p>
+						<p>The states of categorical features are regrouped and the continuous features concerned are binned according to the data tree regressor bins. The regroupments are performed by a hand-written function. The function loops over a dataset's features. If a feature is in one of the python objects which define the regroupment, the regroupment is done.</p>
 						<span><b>Performs the regroupments and binning</b></span>
 						<pre>
 							<code>
@@ -504,7 +564,7 @@
 					</div>
 					<div class="section-top-border">
 						<h2>Creation of new features</h2>
-						<p>A bunch of new features can be created from the existings one. For example, the quality of fireplaces and their quality are combined to form one unique feature.</p>
+						<p>A group of new features can be created from the existing ones. For example, the number of fireplaces and their quality are combined to form one unique feature.</p>
 						<span><b>Creation of new features</b></span>
 						<pre>
 							<code>
@@ -519,8 +579,24 @@
 					</div>
 					<div class="section-top-border">
 						<h2>Dichotomization</h2>
-						<p>A short hand writted function allows to dichotomize a given dataset ignoring specified features. The ignored features are the continuous ones who haven&#39;t been binned, thoses which will undergo a polynomial transformation and a few else like the target feature.</p>
-						<span><b>Performs the dichotomization</b></span>
+						<p>A short hand-written function allows us to dichotomize a given dataset ignoring specified features. The ignored features are the continuous ones which haven&#39;t been binned, plus those which will undergo a polynomial transformation and a few others, such as the target feature.</p>
+						<span><b>The function that performs the dichotomization</b></span>
+						<pre>
+							<code>
+    def dichotomize_dataset(dataset, columnsToNotDicho):
+        dichotomizeDF = pd.DataFrame()
+        for column in dataset :
+            if(column not in columnsToNotDicho):
+                dummies = pd.get_dummies(dataset[column], prefix=column)
+                dummies.reset_index(drop=True, inplace=True)
+                dichotomizeDF.reset_index(drop=True, inplace=True)
+                dichotomizeDF = pd.concat([dichotomizeDF, dummies], axis=1, sort=True)
+            else:
+                dichotomizeDF[column] = dataset[column]
+        return dichotomizeDF
+							</code>
+						</pre>
+						<span><b>Perform the dichotomization</b></span>
 						<pre>
 							<code>
 	train_dicho = ownLibrary.dichotomize_dataset(rgrpd_train, ignore)
@@ -531,8 +607,8 @@
 					</div>
 					<div class="section-top-border">
 						<h2>Polynomial transformation</h2>
-						<p>A hand writted function performs a polynomial transformation on a features list of a given dataset and a given polynomial order. The function returns the transformed dataset. Here are performed a first polynomial transformation of order 2 on the concerned features, the resulting dataset is then used for a second transformation of order 3 for another list of features defined at the begining of the notebook.</p>
-						<span><b>Performs the polynomial transformation</b></span>
+						<p>A hand-written function from the custom library performs a polynomial transformation on a list of features of a given dataset with a given polynomial order. The function returns the transformed dataset. Here a first polynomial transformation of order 2 on the concerned features is performed. The resulting dataset is then used for a second transformation of order 3 for another list of features defined at the begining of the notebook.</p>
+						<span><b>Perform the polynomial transformation</b></span>
 						<pre>
 							<code>
 	train_pr2_transformed = ownLibrary.PolynomialRegrTransformationReturnDF(train_poly, var_base_pr2, 2)
@@ -546,8 +622,8 @@
 						</pre>
 					</div>
 					<div class="section-top-border">
-						<h2>Harmonization of features presence in each dataset</h2>
-						<p>Arrived to this steps, some dataset can have more features than another one. For example, the lot area feature has been transformed into several bins, the train dataset has no bin number 1 of this feature. The harmonization insert this feature/bin in the train dataset and fill it with 0 values (as the feature is a dichotomized one), indicating that no observation are concerned by this feature.</br>
+						<h2>Harmonization of features present in each dataset</h2>
+						<p>At this stage, some datasets can have more features than others. For example, the lot area feature was transformed into several bins, but the train dataset has no bin number 1 of this feature. The harmonization inserts this feature/bin in the train dataset and fills it with 0 values (as the feature is a dichotomized one), indicating that no observations are concerned by this feature.</br>
 						Here is an example with the test dataset :
 						</p>
 						<span><b>Identify the features which are present in the train and submission dataset but not in the test one</b></span>
@@ -577,9 +653,12 @@
 						</pre>
 					</div>
 					<div class="section-top-border">
-						<h2>Features selection</h2>
-						<p>A stepwise function decide alone of the features that will be use for the modelisation part, I admit to have found this function on the web. The stepwise function used can be found on this <a href="https://datascience.stackexchange.com/questions/24405/how-to-do-stepwise-regression-using-sklearn/24447#24447">Stepwise function source</a></p>
-						<span><b>Perform a stepwise features selection</b></span>
+						<h2>Feature selection</h2>
+                        <p>Several feature selection methods are used to detect effective combinations of features for the modeling part. The Stepwise provides a solution that presents a small set of features for a good accuracy. On the other hand, the Recursive feature addition maximizes the R² but uses more features.</p>
+                        <h3>Stepwise</h3>
+						<p>A stepwise function found on the web leads to good accuracy modelings. The function has been included in the custom library and can be found at this address : <a href="https://datascience.stackexchange.com/questions/24405/how-to-do-stepwise-regression-using-sklearn/24447#24447">Stepwise function's source</a></br>
+                        The stepwise selection results in approximately 40 features, depending on the combination of scaling and transformation methods used. The R² score reaches around 90 %.</p>
+						<span><b>Perform a stepwise feature selection</b></span>
 						<pre>
 							<code>
 	variables = list(train_rwrk.columns)
@@ -592,21 +671,23 @@
 	result_stepwise = ownLibrary.stepwise_selection(X, y)
 							</code>
 						</pre>
-						<p>The stepwise selection results in approximately 40 features, depending on the combination of scaling and transformation methods used.</p>
+						
+                        <h3>Recursive feature addition</h3>
+                        <p>
+                            The recursive feature addition is the most adapted to maximize the R² which reaches around 91,5 % of accuracy with around 90 features used. The function has been modified and included in the custom library from this post : <a href="https://heartbeat.fritz.ai/hands-on-with-feature-selection-techniques-hybrid-methods-b93b1b06d3a5">Recursive feature addition function's source</a>
+                        </p>
 					</div>
 					<div class="section-top-border">
-						<h2>Launching modelisation</h2>
-						<p>The library GridSearchCV allows to find the best parameters for a bunch of models. When those parameters are found, the features selected by the stepwise are transmited to a hand writted function than run severals models fitted with the training data. The predicted values for each of these models are stored in two data frame, one for the training dataset predicted values, and one for the test dataset.</p>
-						<p>A last hand writted function print the results of these modelisation for the training and test datasets, allowing to have information about overfitting or underfitting presence.</p>
+						<h2>Launching modeling</h2>
+						<p>The GridSearchCV library allows us to find the best parameters for a group of models. When these parameters are found, the features selected by the stepwise are transmitted to a hand-written function than runs several models fitted with the training data. The predicted values for each of these models are stored in two data frames, one for the training dataset predicted values, and one for the test dataset.</p>
+						<p>A last hand-written function prints the results of these modelings for the training and test datasets, giving information about overfitting or underfitting presence.</p>
 						<span><b>Define the features and models to use</b></span>
 						<pre>
 							<code>
-	var_stepwise = result_stepwise
 	y = 'SalePrice_log'
 	models = {
 	    'fa' : {
 	        'label' : 'Forêt aléatoire',
-	        #'function' : RandomForestRegressor(n_estimators=7, max_depth=11, min_samples_split=3, min_samples_leaf=1, random_state=0, n_jobs=-1)
 	        'function' : RandomForestRegressor(n_estimators=35, max_depth=11, min_samples_split=3, min_samples_leaf=1, random_state=0, n_jobs=-1)
 	    },
 	    ...
@@ -614,11 +695,10 @@
 	        'label' : 'Regression linéaire multivariée',
 	        'function' : LinearRegression()
 	    }
-
 	}
 							</code>
 						</pre>
-						<span><b>Perform the modelisation</b></span>
+						<span><b>Perform the modeling</b></span>
 						<pre>
 							<code>
 	for model in models :
@@ -627,167 +707,117 @@
 	predictions_test = ownLibrary.runModels1DS(test_rwrk, 'test', var_stepwise, y, models)
 							</code>
 						</pre>
-						<span><b>Printing the results</b></span>
+                    </div>
+                    <div class="section-top-border">
+                        <h1>Results</h1>
+						<span><b>Printing the results</b></br>Here are the results based on the Recursive feature addition</span>
 						<pre>
 							<code class="python">
-	ownLibrary.afficheResults(predictions_train, predictions_test, 'SalePrice', models)
+    ownLibrary.afficheResults(predictions_train, predictions_test, 'SalePrice', models)
 
-	------------- Random forest -------------
+    ---------- K-Nearest Neighbors ----------
 
-	Train : R² = 97.4% , rsquared = 97.8% , corr = 98.9% , MSE = 160125383.76
-	Test : R² = 84.0% , rsqaured = 84.4% , corr = 91.8% , MSE = 1029079283.89
+        Train : R² = 61.2 % 
+        Test : R² = 56.2 % 
 
-	------------- Decision tree - Regressor -------------
+    ---------- Decision Tree Regressor ----------
 
-	Train : R² = 98.4% , rsquared = 98.4% , corr = 99.2% , MSE = 100759539.13
-	Test : R² = 74.0% , rsqaured = 74.5% , corr = 86.3% , MSE = 1671249530.34
+        Train : R² = 98.3 % 
+        Test : R² = 79.3 % 
 
-	------------- KNN -------------
+    ---------- Linear Regression ----------
 
-	Train : R² = 64.4% , rsquared = 66.3% , corr = 81.4% , MSE = 2224200972.83
-	Test : R² = 58.4% , rsqaured = 61.0% , corr = 78.1% , MSE = 2676487093.09
+        Train : R² = 91.5 % 
+        Test : R² = 91.7 % 
 
-	------------- Multivariation linear regression -------------
+    ---------- Random Forest ----------
 
-	Train : R² = 92.9% , rsquared = 93.0% , corr = 96.4% , MSE = 443628942.43
-	Test : R² = 89.9% , rsqaured = 89.9% , corr = 94.8% , MSE = 650386382.74
+        Train : R² = 97.5 % 
+        Test : R² = 85.7 % 
+
+    ---------- Ridge Regression ----------
+
+        Train : R² = 91.4 %
+        Test : R² = 91.5 %
 							</code>
 						</pre>
-						<p>The 89,9% R² with the Multivariate linear regression is currently the best score that I got. To get it used the following transformations method of my continuous features :</p>
-						<div class="row grid">
-							<div class="single-work col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-duration="2s">
-								<ul class="unordered-list">
-								    <li>Binning with the DTR 
-								    	<ul>
-								    		<li>LotFrontage</li>
-								    		<li>LotArea</li>
-								    		<li>YearBuilt</li>
-								    		<li>YearRemodAdd</li>
-								    		<li>BsmtFinSF2</li>
-								    		<li>GarageYrBlt</li>
-								    		<li>WoodDeckSF</li>
-								    		<li>OpenPorchSF</li>
-								    		<li>EnclosedPorch</li>
-							    		</ul>
-								    </li>
-								</ul>
-							</div>
-							<div class="single-work col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-duration="2s">
-								<ul class="unordered-list">
-								    <li>No transformation
-										<ul>
-								    		<li>MasVnrArea</li>
-								    		<li>ScreenPorch</li>
-							    		</ul>
-								    </li>
-
-								</ul>
-							</div>
-							<div class="single-work col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-duration="2s">
-								<ul class="unordered-list">
-								    <li>Polynomial transformation order 2
-										<ul>
-								    		<li>1stFlrSF</li>
-								    		<li>GarageArea</li>
-							    		</ul>
-								    </li>
-								    <li>Polynomial transformation order 3
-								    	<ul>
-								    		<li>BsmtFinSF1</li>
-								    		<li>BsmtUnfSF</li>
-								    		<li>TotalBsmtSF</li>
-								    		<li>2ndFlrSF</li>
-								    		<li>GrLivArea</li>
-								    	</ul>
-								    </li>
-								</ul>
-							</div>
+						<p>The 91,7 % R² with the Multivariate linear regression is currently the best score obtained by the study. The submission on Kaggle.com ranks the study at 1,741, so in the first 33%. 
+                    </p>
+                </div>
+                <div class="section-top-border">
+                    <h1>Summary of study's steps</h1>
+                    <p>Here is a summary of the steps that led to the result :</p>
+					<div class="row grid">
+						<div class="single-work col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-duration="2s">
+                            <span><b>Step 1 - Exploratory Data Analysis</b></span>
+							<ul class="unordered-list unordered-list-inpost list-margin-left">
+					    		<li>Split dataset in train and test</li>
+					    		<li>Replacement of missing values</li>
+					    		<li>Creation of new features</li>
+					    		<li>Feature deletion</li>
+					    		<li>Outlier correction</li>
+					    		<li>Target feature distribution correction</li>
+				    		</ul>
+						</div>
+						<div class="single-work col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-duration="2s">
+                            <span><b>Step 2 - Best transformation research</b></span>
+							<ul class="unordered-list unordered-list-inpost list-margin-left">
+					    		<li>Comparison of different scale methods</li>
+					    		<li>Comparison of different transformations
+                                <ul>
+                                    <li>Feature left continuous</li>
+                                    <li>Binning based on a data tree regressor</li>
+                                    <li>Polynomial transformation</li>
+                                </ul>
+                                </li>
+                                <li>Categorical feature grouping</li>
+				    		</ul>
+						</div>
+                    </div>
+                    </hr>
+                    <div class="row grid">
+                        <div class="single-work col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-duration="2s">
+                            <span><b>Step 3 - Performing transformation</b></span>
+                            <ul class="unordered-list unordered-list-inpost list-margin-left">
+                                <li>Grouping of feature states</li>
+                                <li>Creation of new features</li>
+                                <li>Dichotomization</li>
+                                <li>Polynomial transformation</li>
+                            </ul>
+                        </div>
+						<div class="single-work col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-duration="2s">
+                            <span><b>Step 4 - Modeling</b></span>
+							<ul class="unordered-list unordered-list-inpost list-margin-left">
+					    		<li>Feature selection
+                                    <ul>
+                                        <li>Stepwise</li>
+                                        <li>Recursive feature addition</li>
+                                        <li>Recursive feature elimination</li>
+                                    </ul>
+                                </li>
+                                <li>GridSearchCV</li>
+					    		<li>Performing modeling</li>
+                                <li>Analysing results</li>
+				    		</ul>
 						</div>
 					</div>
+                    <h1>Project's GitHub Repository</h1>
+                    <div class="img-frame margin-top-20">
+                        <a href="https://github.com/Jdecot/House-prices" target="_blank">
+                            <img class="img-fluid vertical-align-middle max-width-40" src="img/brand/originaux/github.png" alt="GitHub logo">
+                        </a>
+                    </div>
+				</div>
+
 				</div>
 			</div>
 		</div>
 	</section>
 	<!-- End Portfolio Details Area -->
 
-	<!-- Start Contact Area -->
-	<section class="contact-area section-gap">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="contact-title">
-						<h2>Contact Me</h2>
-						<p>If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may see
-							some for as low as $.17 each.</p>
-					</div>
-				</div>
-			</div>
+	<?php include('layouts/contact-section.php'); ?>
 
-			<div class="row mt-80">
-				<div class="col-lg-4 col-md-4">
-					<div class="contact-box">
-						<h4>+44 2365 654 8962</h4>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-4">
-					<div class="contact-box">
-						<h4>information@colorlib.com</h4>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-4">
-					<div class="contact-box">
-						<h4>kenedyjackson.me</h4>
-					</div>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-lg-12 text-center">
-					<a href="#" class="primary-btn mt-50" data-text="Hire Me">
-						<span>H</span>
-						<span>i</span>
-						<span>r</span>
-						<span>e</span>
-						<span> </span>
-						<span>M</span>
-						<span>e</span>
-					</a>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- End Contact Area -->
-
-	<!-- start footer Area -->
-	<footer class="footer-area">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-12">
-					<div class="footer-top flex-column">
-						<div class="footer-logo">
-							<a href="#">
-								<img src="img/logo.png" alt="">
-							</a>
-							<h4>Follow Me</h4>
-						</div>
-						<div class="footer-social">
-							<a href="#"><i class="fa fa-facebook"></i></a>
-							<a href="#"><i class="fa fa-twitter"></i></a>
-							<a href="#"><i class="fa fa-dribbble"></i></a>
-							<a href="#"><i class="fa fa-behance"></i></a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row footer-bottom justify-content-center">
-				<p class="col-lg-8 col-sm-12 footer-text">
-					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-			</div>
-		</div>
-	</footer>
-	<!-- End footer Area -->
+	<?php include('layouts/footer.php'); ?>
 
 	<!-- ####################### Start Scroll to Top Area ####################### -->
 	<div id="back-top">

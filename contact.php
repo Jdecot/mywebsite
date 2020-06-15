@@ -13,12 +13,12 @@
 			<div class="row d-flex align-items-center justify-content-center">
 				<div class="about-content col-lg-12">
 					<h1 class="text-white">
-						Contact Us
+						Contact Me
 					</h1>
 					<p class="link-nav">
 						<span class="box">
-							<a href="index.html">Home </a>
-							<a href="contact.html">Contact</a>
+							<a href="index.php">Home </a>
+							<a href="about.php">About me</a>
 						</span>
 					</p>
 				</div>
@@ -31,13 +31,13 @@
 	<section class="contact-page-area section-gap-top">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-4 d-flex flex-column address-wrap">
-					<h4 class="contact-h4">Send me a message on Linkedin</h4>
+				<div class="col-lg-4 d-flex flex-column address-wrap margin-bottom-2">
+					<h4 class="margin-bottom-2">Send me a message on Linkedin</h4>
 					<div class="align-items-center horizontal-center">
 						<?php include('components/linkedin-badge.php'); ?>
 					</div>
 				</div>
-				<div class="col-lg-8">
+				<div class="col-lg-8 margin-bottom-2">
 					<h4 class="contact-h4">Send me an email</h4>
 					<form class="form-area " id="myForm" action="mail.php" method="post" class="contact-form text-right">
 						<div class="row">
@@ -78,44 +78,17 @@
 					</form>
 				</div>
 
-				<div class="col-lg-12">
+				<!--<div class="col-lg-12">
 					<div class="map-wrap" style="width:100%; height: 445px;" id="map"></div>
-				</div>
+				</div>-->
 			</div>
 		</div>
+
 	</section>
+	</hr>
 	<!-- End contact-page Area -->
 
-	<!-- start footer Area -->
-	<footer class="footer-area">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-12">
-					<div class="footer-top flex-column">
-						<div class="footer-logo">
-							<a href="#">
-								<img src="img/logo.png" alt="">
-							</a>
-							<h4>Follow Me</h4>
-						</div>
-						<div class="footer-social">
-							<a href="#"><i class="fa fa-facebook"></i></a>
-							<a href="#"><i class="fa fa-twitter"></i></a>
-							<a href="#"><i class="fa fa-dribbble"></i></a>
-							<a href="#"><i class="fa fa-behance"></i></a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row footer-bottom justify-content-center">
-				<p class="col-lg-8 col-sm-12 footer-text">
-					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-			</div>
-		</div>
-	</footer>
-	<!-- End footer Area -->
+	<?php include('layouts/footer.php'); ?>
 
 	<!-- ####################### Start Scroll to Top Area ####################### -->
 	<div id="back-top">

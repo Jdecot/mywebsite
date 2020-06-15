@@ -1,1 +1,6 @@
 DirectoryIndex index.php
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^juliendecot\.com [NC]
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI}

@@ -15,13 +15,13 @@
 						</ul>
 					</li>
 					<li><a href="portfolio.php">Portfolio</a></li>
-					<li class="menu-has-children"><a href="#">Pages</a>
+					<!--<li class="menu-has-children"><a href="#">Pages</a>
 						<ul>
 							<li><a href="elements.php">Elements</a></li>
 							<li><a href="services.php">Service</a></li>
 							<li><a href="portfolio-details.php">Portfolio Details</a></li>
 						</ul>
-					</li>
+					</li>-->
 					<li><a href="contact.php">Contact</a></li>
 				</ul>
 			</nav>

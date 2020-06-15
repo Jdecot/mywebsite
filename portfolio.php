@@ -17,8 +17,8 @@
 					</h1>
 					<p class="link-nav">
 						<span class="box">
-							<a href="index.html">Home </a>
-							<a href="portfolio.html">Portfolio</a></p>
+							<a href="index.php">Home </a>
+							<a href="about.php">About</a></p>
 					</span>
 				</div>
 			</div>
@@ -28,84 +28,8 @@
 
 	<?php include('layouts/latest-works.php'); ?>
 
-	<!-- Start Contact Area -->
-	<section class="contact-area section-gap">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="contact-title">
-						<h2>Contact Me</h2>
-						<p>If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may see
-							some for as low as $.17 each.</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="row mt-80">
-				<div class="col-lg-4 col-md-4">
-					<div class="contact-box">
-						<h4>+44 2365 654 8962</h4>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-4">
-					<div class="contact-box">
-						<h4>information@colorlib.com</h4>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-4">
-					<div class="contact-box">
-						<h4>kenedyjackson.me</h4>
-					</div>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-lg-12 text-center">
-					<a href="#" class="primary-btn mt-50" data-text="Hire Me">
-						<span>H</span>
-						<span>i</span>
-						<span>r</span>
-						<span>e</span>
-						<span> </span>
-						<span>M</span>
-						<span>e</span>
-					</a>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- End Contact Area -->
-
-	<!-- start footer Area -->
-	<footer class="footer-area">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-12">
-					<div class="footer-top flex-column">
-						<div class="footer-logo">
-							<a href="#">
-								<img src="img/logo.png" alt="">
-							</a>
-							<h4>Follow Me</h4>
-						</div>
-						<div class="footer-social">
-							<a href="#"><i class="fa fa-facebook"></i></a>
-							<a href="#"><i class="fa fa-twitter"></i></a>
-							<a href="#"><i class="fa fa-dribbble"></i></a>
-							<a href="#"><i class="fa fa-behance"></i></a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row footer-bottom justify-content-center">
-				<p class="col-lg-8 col-sm-12 footer-text">
-					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-			</div>
-		</div>
-	</footer>
-	<!-- End footer Area -->
+	<?php include('layouts/contact-section.php'); ?>
+	<?php include('layouts/footer.php'); ?>
 
 	<!-- ####################### Start Scroll to Top Area ####################### -->
 	<div id="back-top">

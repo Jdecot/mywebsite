@@ -34,7 +34,7 @@
 				<div class="col-lg-12">
 					<div class="section-title">
 						<h2>Job History</h2>
-						<p>Here is the online version of my jobs history. I didn't reported the shorter jobs of few days duration at the mall or a the factory for example. I also didn't reported the time spent in training at the university or for online certification. You still can see my full story on the <a href="path.php">My Path</a> page
+						<p>Here is the online version of my job history. You can still see my full story on the <a href="path.php">My Path</a> page
 						</p>
 					</div>
 				</div>
@@ -59,7 +59,7 @@
 							</div>
 						</div>
 						<div class="bottom-sec wow fadeIn" data-wow-duration="2s">
-							Web developpement with VueJS
+							Web development with VueJS
 						</div>
 					</div>
 				</div>
@@ -80,12 +80,12 @@
 									<span>2</span><span>0</span><span>1</span><span>8</span>
 									<span>t</span><span>o</span>
 									<span>J</span><span>u</span><span>n</span>
-									<span>2</span><span>0</span><span>1</span><span>8</span>
+									<span>2</span><span>0</span><span>1</span><span>9</span>
 								</a>
 							</div>
 						</div>
 						<div class="bottom-sec wow fadeIn" data-wow-duration="2s">
-							Reporting of user traffic and sells
+							Reporting of user traffic and sales
 						</div>
 					</div>
 				</div>
@@ -96,11 +96,11 @@
 					<div class="single-job">
 						<div class="top-sec d-flex justify-content-between">
 							<div class="top-left">
-								<h4>Web developper</h4>
+								<h4>Web developer</h4>
 								<p>Altran, Wasquehal</p>
 							</div>
 							<div class="top-right">
-								<a href="#" class="primary-btn" data-text="Sept 2017 to Jun 2018">
+								<a href="#" class="primary-btn" data-text="Sept 2017 to Sept 2018">
 									<span>S</span><span>e</span><span>p</span><span>t</span>
 									<span>2</span><span>0</span><span>1</span><span>7</span>
 									<span>t</span><span>o</span>
@@ -110,13 +110,13 @@
 							</div>
 						</div>
 						<div class="bottom-sec wow fadeIn" data-wow-duration="2s">
-							Web developpement with AngularJS</br>
-							Data Science operationnal research
+							Web development with AngularJS</br>
+							Data Science operational research
 						</div>
 					</div>
 				</div>
 			</div>
-			<p class="job-history-year">2015 to 2016</p>
+			<p class="job-history-year">2015 - 2016</p>
 			<div class="row">
 				<div class="col-lg-6">
 					<div class="single-job">
@@ -137,7 +137,7 @@
 						</div>
 						<div class="bottom-sec wow fadeIn" data-wow-duration="2s">
 							Creation of a website with Wordpress</br>
-							Web developpement with PHP, Javascript, HTML/CSS</br>
+							Web development with PHP, Javascript, HTML/CSS</br>
 							Articles writing</br>
 							Advertising management
 						</div>
@@ -156,16 +156,15 @@
 							</div>
 							<div class="top-right">
 								<a href="#" class="primary-btn" data-text="Nov to Dec 2014">
-									<span>S</span><span>e</span><span>p</span><span>t</span>
-									<span>2</span><span>0</span><span>1</span><span>8</span>
+									<span>N</span><span>o</span><span>v</span>
 									<span>t</span><span>o</span>
-									<span>J</span><span>u</span><span>n</span>
-									<span>2</span><span>0</span><span>1</span><span>8</span>
+									<span>D</span><span>e</span><span>c</span>
+									<span>2</span><span>0</span><span>1</span><span>4</span>
 								</a>
 							</div>
 						</div>
 						<div class="bottom-sec wow fadeIn" data-wow-duration="2s">
-							IT support to the employees by phone
+							IT support to employees by phone
 						</div>
 					</div>
 				</div>
@@ -174,25 +173,24 @@
 					<div class="single-job">
 						<div class="top-sec d-flex justify-content-between">
 							<div class="top-left">
-								<h4>Custommer service</h4>
-								<p>Ducatillon, Mons-en-baroeul</p>
+								<h4>Customer service</h4>
+								<p>Ducatillon, Mons-en-Baroeul</p>
 							</div>
 							<div class="top-right">
 								<a href="#" class="primary-btn" data-text="Aug to Oct 2014">
-									<span>S</span><span>e</span><span>p</span><span>t</span>
-									<span>2</span><span>0</span><span>1</span><span>8</span>
+									<span>A</span><span>u</span><span>g</span>
 									<span>t</span><span>o</span>
-									<span>J</span><span>u</span><span>n</span>
-									<span>2</span><span>0</span><span>1</span><span>8</span>
+									<span>O</span><span>c</span><span>t</span>
+									<span>2</span><span>0</span><span>1</span><span>4</span>
 								</a>
 							</div>
 						</div>
 						<div class="bottom-sec wow fadeIn" data-wow-duration="2s">
-							Orders taking</br>
+							Taking orders</br>
 							Management of carrier disputes</br>
-							Customer complaint</br>
+							Customer complaints</br>
 							Missing packages</br>
-							Refund</br>
+							Refunds</br>
 							Invoice tracking
 						</div>
 					</div>
@@ -207,10 +205,10 @@
 							</div>
 							<div class="top-right">
 								<a href="#" class="primary-btn" data-text="Feb to May 2014">
-									<span>J</span><span>u</span><span>l</span>
-									<span>'</span><span>1</span><span>5</span>
+									<span>F</span><span>e</span><span>b</span>
 									<span>t</span><span>o</span>
-									<span>P</span><span>r</span><span>e</span><span>s</span><span>e</span><span>n</span><span>t</span>
+									<span>M</span><span>a</span><span>y</span>
+									<span>2</span><span>0</span><span>1</span><span>4</span>
 								</a>
 							</div>
 						</div>
@@ -229,15 +227,15 @@
 							</div>
 							<div class="top-right">
 								<a href="#" class="primary-btn" data-text="Nov to Dec 2013">
-									<span>J</span><span>u</span><span>l</span>
-									<span>'</span><span>1</span><span>5</span>
+									<span>N</span><span>o</span><span>v</span>
 									<span>t</span><span>o</span>
-									<span>P</span><span>r</span><span>e</span><span>s</span><span>e</span><span>n</span><span>t</span>
+									<span>D</span><span>e</span><span>c</span>
+									<span>2</span><span>0</span><span>1</span><span>3</span>
 								</a>
 							</div>
 						</div>
 						<div class="bottom-sec wow fadeIn" data-wow-duration="2s" data-wow-delay="0.4s">
-							Determination of company's products sell price
+							Fixing sale price of company's products.
 						</div>
 					</div>
 				</div>
@@ -250,17 +248,16 @@
 							</div>
 							<div class="top-right">
 								<a href="#" class="primary-btn" data-text="Jun to Aug 2013">
-									<span>J</span><span>u</span><span>l</span>
-									
+									<span>J</span><span>u</span><span>n</span>
 									<span>t</span><span>o</span>
 									<span>A</span><span>u</span><span>g</span>
-									<span>2</span><span>0</span><span>1</span><span>1</span>
+									<span>2</span><span>0</span><span>1</span><span>3</span>
 								</a>
 							</div>
 						</div>
 						<div class="bottom-sec wow fadeIn" data-wow-duration="2s" data-wow-delay="0.6s">
 							Supervision of the company network</br>
-							IT support to the employees by phone and proximity</br>
+							IT support to employees</br>
 							Management of the material and computer park
 						</div>
 					</div>
@@ -274,16 +271,15 @@
 							</div>
 							<div class="top-right">
 								<a href="#" class="primary-btn" data-text="Aug to Sept 2012">
-									<span>J</span><span>u</span><span>l</span>
-									
-									<span>t</span><span>o</span>
 									<span>A</span><span>u</span><span>g</span>
-									<span>2</span><span>0</span><span>1</span><span>1</span>
+									<span>t</span><span>o</span>
+									<span>S</span><span>e</span><span>p</span><span>t</span>
+									<span>2</span><span>0</span><span>1</span><span>2</span>
 								</a>
 							</div>
 						</div>
 						<div class="bottom-sec wow fadeIn" data-wow-duration="2s" data-wow-delay="0.6s">
-							Communication to the customer about transport lines modification
+							Communication to the customer about transport line modification
 						</div>
 					</div>
 				</div>
@@ -296,8 +292,7 @@
 							</div>
 							<div class="top-right">
 								<a href="#" class="primary-btn" data-text="Jun to Aug 2011">
-									<span>J</span><span>u</span><span>l</span>
-									
+									<span>J</span><span>u</span><span>n</span>
 									<span>t</span><span>o</span>
 									<span>A</span><span>u</span><span>g</span>
 									<span>2</span><span>0</span><span>1</span><span>1</span>
@@ -305,50 +300,17 @@
 							</div>
 						</div>
 						<div class="bottom-sec wow fadeIn" data-wow-duration="2s" data-wow-delay="0.6s">
-							Recovering of unpaid debt by phone call</br>
-							Negociation of refund agreement
+							Debt recovery by phone</br>
+							Negotiation of refund agreements
 						</div>
 					</div>
 				</div>
 			</div>
-
-
-
 		</div>
 	</section>
 	<!-- End Job Historyt Area Area -->
-	<?php include('components/contact-section.php'); ?>
-
-	<!-- start footer Area -->
-	<footer class="footer-area">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-12">
-					<div class="footer-top flex-column">
-						<div class="footer-logo">
-							<a href="#">
-								<img src="img/logo.png" alt="">
-							</a>
-							<h4>Follow Me</h4>
-						</div>
-						<div class="footer-social">
-							<a href="#"><i class="fa fa-facebook"></i></a>
-							<a href="#"><i class="fa fa-twitter"></i></a>
-							<a href="#"><i class="fa fa-dribbble"></i></a>
-							<a href="#"><i class="fa fa-behance"></i></a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row footer-bottom justify-content-center">
-				<p class="col-lg-8 col-sm-12 footer-text">
-					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-					Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-				</div>
-			</div>
-		</footer>
-		<!-- End footer Area -->
+	<?php include('layouts/contact-section.php'); ?>
+	<?php include('layouts/footer.php'); ?>
 
 		<!-- ####################### Start Scroll to Top Area ####################### -->
 		<div id="back-top">
