@@ -42,11 +42,11 @@
 								<p>Cofidis, Villeneuve d'Ascq</p>
 							</div>
 							<div class="top-right">
-								<a href="job-history.php" class="primary-btn" data-text="Sept 2018 to Jun 2019">
+								<a href="job-history.php" class="primary-btn" data-text="Sept 2018 to June 2019">
 									<span>S</span><span>e</span><span>p</span><span>t</span>
 									<span>2</span><span>0</span><span>1</span><span>8</span>
 									<span>t</span><span>o</span>
-									<span>J</span><span>u</span><span>n</span>
+									<span>J</span><span>u</span><span>n</span><span>e</span>
 									<span>2</span><span>0</span><span>1</span><span>9</span>
 								</a>
 							</div>
